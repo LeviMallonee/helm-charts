@@ -1,0 +1,12 @@
+***********************************************************************
+ Welcome to Grafana Loki
+ Chart version: {{ .Chart.Version }}
+ Loki version: {{ .Chart.AppVersion }}
+***********************************************************************
+
+Installed components:
+{{- if .Values.gateway.enabled }}
+* gateway
+{{- end }}
+* read
+* write
